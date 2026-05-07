@@ -69,37 +69,14 @@
   }
   .mockup-bar .dot { color: var(--sky); }
 
-  /* Header */
+  /* Header — flat solid nav, dark navy on light body */
   .site-header {
     background: var(--ink);
     color: var(--paper);
-    border-bottom: 1px solid rgba(142,161,255,0.12);
+    border-bottom: 1px solid rgba(142, 161, 255, 0.08);
     position: sticky;
     top: 0;
     z-index: 50;
-    backdrop-filter: saturate(140%) blur(14px);
-    overflow: hidden;
-  }
-  .site-header::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 50% 50% at 85% 30%, rgba(142,161,255,0.4), transparent 65%),
-      radial-gradient(ellipse 60% 50% at 15% 100%, rgba(56,67,208,0.55), transparent 65%);
-    pointer-events: none;
-  }
-  .site-header::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image:
-      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-    background-size: 56px 56px;
-    mask-image: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.85), transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse at 50% 50%, rgba(0,0,0,0.85), transparent 75%);
-    pointer-events: none;
   }
   .header-inner {
     position: relative;
@@ -327,8 +304,7 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 55% 45% at 20% 78%, rgba(56,67,208,0.18), transparent 65%),
-      radial-gradient(ellipse 40% 35% at 82% 88%, rgba(252,95,54,0.08), transparent 65%);
+      radial-gradient(ellipse 55% 45% at 20% 22%, rgba(56,67,208,0.26), transparent 65%);
     pointer-events: none;
     z-index: 0;
     filter: blur(40px);
@@ -866,8 +842,7 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 50% 50% at 85% 30%, rgba(142,161,255,0.4), transparent 65%),
-      radial-gradient(ellipse 60% 50% at 15% 100%, rgba(56,67,208,0.55), transparent 65%);
+      radial-gradient(ellipse 55% 45% at 100% 100%, rgba(56,67,208,0.26), transparent 65%);
     pointer-events: none;
   }
   .closing-cta::after {
@@ -3735,7 +3710,6 @@
   </div>
   <div class="foot-bottom">
     <span>© 2026 Dimagi, Inc. All rights reserved.</span>
-    <span>Mockup · v11 reshape · for design review only</span>
   </div>
 </footer>
 
