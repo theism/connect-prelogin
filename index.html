@@ -1018,8 +1018,26 @@
     z-index: 2;
     overflow: visible;
   }
+  /* Label above the horizontal arrow */
+  .market-arrow-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 32px));
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--indigo);
+    text-align: center;
+    line-height: 1.25;
+    pointer-events: none;
+    z-index: 2;
+  }
   @media (max-width: 980px) {
-    .market-arrow { display: none; }
+    .market-arrow,
+    .market-arrow-label { display: none; }
   }
   /* Legacy center-exchange element retained for backwards compatibility, hidden */
   .market-exchange { display: none; }
@@ -3614,11 +3632,11 @@
           </div>
         </div>
 
-        <!-- Connect Platform side -->
+        <!-- Frontline Organizations side -->
         <div class="market-side market-side-platform">
           <div class="market-side-header">
-            <span class="role-tag">Connect Platform</span>
-            <h3>Connect finds the best way to <em>deliver your impact</em>.</h3>
+            <span class="role-tag">Frontline Organizations</span>
+            <h3>Well-qualified Frontline Organizations deliver <em>verified services</em>.</h3>
             <a class="market-side-cta" href="#/join">See how Frontline Organizations deliver →</a>
           </div>
           <div class="platform-promise">
@@ -3663,18 +3681,19 @@
           </div>
         </div>
 
-        <!-- Single horizontal arrow: Funders → Connect Platform, anchored at the vertical centre of each box -->
+        <!-- Single horizontal arrow: Funders → Frontline Organizations (via Connect Platform), anchored at the vertical centre of each box -->
         <svg class="market-arrow" viewBox="0 0 80 16" aria-hidden="true" preserveAspectRatio="none">
           <line x1="0" y1="8" x2="66" y2="8" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4" vector-effect="non-scaling-stroke"/>
           <polygon points="80,8 64,1 64,15" fill="currentColor"/>
         </svg>
+        <span class="market-arrow-label" aria-hidden="true">Connect<br>Platform</span>
        </div><!-- /.market-pair -->
 
         <!-- Loop arrow: flows from the Connect Platform side back to Funders -->
         <div class="market-loop">
           <div class="market-loop-arrow" aria-hidden="true"></div>
           <div class="market-loop-content">
-            <h4 class="market-loop-title">Funders see verified results</h4>
+            <h4 class="market-loop-title">Both Funders and Frontline Organizations see verified results</h4>
             <p class="market-loop-text">Funders only pay for verified services, and can decide to renew or select a new program area.</p>
             <div class="market-loop-placeholder" role="img" aria-label="Placeholder for upcoming verification screenshot.">
               <span class="placeholder-tag">Incoming Image</span>
