@@ -25,6 +25,7 @@
     --indigo-deep: #2832A0;
     --indigo-soft: #E7E9FB;
     --sky: #8EA1FF;
+    --sky-deep: #5C6FE8;
     --sky-tint: #F0F3FF;
     /* Mango, used sparingly: CTA buttons, single key stats */
     --mango: #FC5F36;
@@ -961,8 +962,11 @@
     margin: 0 auto;
     padding: 0 32px;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 36px;
+  }
+  .foot-brand {
+    text-align: left;
   }
   .foot-brand .logo { font-size: 22px; color: var(--paper); display: inline-block; margin-bottom: 14px; }
   .foot-brand p { font-size: 13.5px; max-width: 38ch; line-height: 1.6; margin: 0; }
@@ -2802,33 +2806,17 @@
   }
   .explore-panel span { position: relative; z-index: 1; max-width: 22ch; }
   .explore-panel.indigo {
-    background-image: url('images/Program%20Field%20Photos/CHC/chc-1.jpg'), linear-gradient(135deg, var(--indigo-deep) 0%, var(--indigo) 100%);
+    background-image: url('images/Program%20Field%20Photos/CHC/chc-3.jpg'), linear-gradient(135deg, var(--indigo-deep) 0%, var(--indigo) 100%);
     background-size: cover;
     background-position: center 35%;
     background-repeat: no-repeat;
   }
   .explore-panel.sky    {
-    background: #FFF8D6;
-    border: 2px dashed #D9B82A;
-    color: #6B5800;
-  }
-  .explore-panel.sky::before,
-  .explore-panel.sky::after { display: none; }
-  .explore-panel.sky .placeholder-tag {
-    display: block;
-    font-family: var(--mono);
-    font-size: 10.5px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #8A6F00;
-    margin-bottom: 8px;
-  }
-  .explore-panel.sky .placeholder-name {
-    font-family: var(--sans);
-    font-size: 16px;
-    font-weight: 500;
-    color: #4F4100;
+    background-image: url('images/Program%20Field%20Photos/KMC/kmc-1.png'), linear-gradient(135deg, var(--sky-deep) 0%, var(--sky) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
   }
   .explore-panel.ink    {
     background-image: url('images/Program%20Field%20Photos/join-hero.jpg'), linear-gradient(135deg, var(--ink) 0%, var(--ink-2) 100%);
@@ -3202,8 +3190,8 @@
 
 <header class="site-header">
   <div class="header-inner">
-    <a class="logo" href="#/" aria-label="Connect by Dimagi"><svg><use href="#connect-logo"/></svg></a>
-    <nav id="primary-nav">
+    <a class="logo" href="#/" aria-label="Connect by Dimagi"><svg viewBox="0 0 1526 431"><use href="#connect-logo"/></svg></a>
+     <nav id="primary-nav">
       <a href="#/" data-route="/">Home</a>
       <a href="#/how-it-works" data-route="/how-it-works">How It Works</a>
       <a href="#/programs" data-route="/programs">Programs</a>
@@ -3225,16 +3213,16 @@
     <div class="wrap">
       <span class="eyebrow on-dark">Connect by Dimagi</span>
       <h1>Pay for <em>verified service delivery</em>, not planned activity.</h1>
-      <p class="lede">Connect delivers high-impact interventions in the places where the need is strongest, through a marketplace of local, government-aligned organizations, with every service independently verified the moment it's done.</p>
+      <p class="lede">Connect delivers high-impact interventions in the places where the need is strongest. Through a marketplace of local, government-aligned organizations, every service is independently verified the moment it's done.</p>
       <div class="hero-actions">
-        <a href="#/" class="btn primary">Request a Demo</a>
+        <a href="mailto:connect-info@dimagi.com" class="btn primary">Request a Demo</a>
         <a href="#/how-it-works" class="btn ghost on-dark">See how it works →</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stats-row">
           <span class="hero-stats-tag">Scale</span>
           <div class="hero-stats-items">
-            <div><div class="num">200+</div><div class="label">Frontline Organizations</div></div>
+            <div><div class="num">50+</div><div class="label">Frontline Organizations</div></div>
             <div><div class="num">5,000+</div><div class="label">Users trained</div></div>
             <div><div class="num">13</div><div class="label">Countries</div></div>
           </div>
@@ -3243,7 +3231,7 @@
           <span class="hero-stats-tag">Impact</span>
           <div class="hero-stats-items">
             <div><div class="num">1.5M+</div><div class="label">Verified services delivered</div></div>
-            <div><div class="num">$2M+</div><div class="label">Paid to frontline workers</div></div>
+            <div><div class="num">$1.5M+</div><div class="label">Paid to frontline workers</div></div>
             <div><div class="num">22%</div><div class="label">Cost reduction per visit</div></div>
             <div><div class="num">94%</div><div class="label">Population coverage</div></div>
           </div>
@@ -3258,35 +3246,39 @@
       <div class="sec-head">
         <div class="label-group">
           <span class="eyebrow">What's different</span>
-          <h2>Verified delivery, <em>service by service</em>.</h2>
+          <h2>Verified delivery, <em>one service at a time</em>.</h2>
           <p class="sub">For decades, funders have paid for planned activity and hoped it added up. Connect changes the model to pay for work delivered, not work promised.</p>
         </div>
       </div>
 
       <div class="compare-table">
         <div class="compare-header area">Area</div>
-        <div class="compare-header old">The old way</div>
         <div class="compare-header new">The Connect way</div>
+        <div class="compare-header old">The old way</div>
 
         <div class="compare-cell area">Sourcing</div>
+        <div class="compare-cell new">A <strong>marketplace of vetted local organizations</strong> bid on each program. Competition drives price down. Resilience replaces dependency.</div>
         <div class="compare-cell old"><strong>Bet on a single organization</strong> per program. Fixed price, no competition.</div>
-        <div class="compare-cell new">A <strong>marketplace of vetted local organizations</strong> bids on each program. Competition drives price down. Resilience replaces dependency.</div>
 
         <div class="compare-cell area">Cost</div>
+        <div class="compare-cell new">Access a <strong>competitive network of frontline organizations</strong> in a targeted geography, lowering overhead and maximizing impact per dollar.</div>
         <div class="compare-cell old">Pay <strong>high overhead</strong> for limited provider choice, travel-heavy implementation, and fixed pricing.</div>
-        <div class="compare-cell new">Access a <strong>competitive network of nearby frontline organizations</strong>, lowering overhead and maximizing impact per dollar.</div>
+
+        <div class="compare-cell area">Location</div>
+        <div class="compare-cell new">Leverage existing local organizations to deliver services to the <strong>hard-to-reach populations that need it most</strong>.</div>
+        <div class="compare-cell old"><strong>Limit where to work</strong> based on travel and operating logistics for implementer organizations.</div>
 
         <div class="compare-cell area">Verification</div>
-        <div class="compare-cell old"><strong>Trust the implementer to report</strong> on whether the work happened.</div>
         <div class="compare-cell new">The platform <strong>independently verifies every service</strong>, not the provider being paid.</div>
+        <div class="compare-cell old"><strong>Trust the implementer to report</strong> on whether the work happened.</div>
 
         <div class="compare-cell area">Progress Tracking</div>
-        <div class="compare-cell old"><strong>Wait until the program ends</strong> to see what was delivered.</div>
         <div class="compare-cell new">See <strong>every service as it's delivered</strong>. Service-level data from day one.</div>
+        <div class="compare-cell old"><strong>Wait until the program ends</strong> to see what was delivered.</div>
 
         <div class="compare-cell area">Payment</div>
+        <div class="compare-cell new"><strong>Pay for delivery</strong>. Every service rendered to a real person, verified before payment.</div>
         <div class="compare-cell old"><strong>Pay for activity</strong>, workshops held, plans filed, reports submitted.</div>
-        <div class="compare-cell new"><strong>Pay for delivery</strong>, every service rendered to a real person, verified before payment.</div>
       </div>
     </div>
   </div>
@@ -3311,15 +3303,10 @@
           <span class="explore-link">See how it works →</span>
         </a>
         <a class="explore-card" href="#/programs">
-          <div class="explore-panel sky">
-            <div>
-              <span class="placeholder-tag">Incoming Image</span>
-              <span class="placeholder-name">Better photo coming soon</span>
-            </div>
-          </div>
+          <div class="explore-panel sky" aria-hidden="true"></div>
           <span class="explore-tag">Programs</span>
           <h4>A Growing Portfolio of Programs &amp; Geographies.</h4>
-          <p style="font-size: 14.5px; color: var(--ink-3); line-height: 1.6; flex-grow: 1;">From kangaroo mother care to child health campaigns to wasting treatment, explore the high-impact interventions running on Connect today.</p>
+          <p style="font-size: 14.5px; color: var(--ink-3); line-height: 1.6; flex-grow: 1;">From Kangaroo Care to Child Health Campaigns to Wasting Treatment, explore the high-impact interventions running on Connect today.</p>
           <span class="explore-link">See the programs →</span>
         </a>
         <a class="explore-card" href="#/join">
@@ -3439,7 +3426,7 @@
             <span class="h-stack">Pick a program.</span>
             <span class="h-stack"><em>Pick a place.</em></span>
           </h2>
-          <p class="sub">Ten programs across thirteen countries, with 200+ partner organizations on the ground. Same four-step cycle behind all of it.</p>
+          <p class="sub">Ten programs across thirteen countries, with 50+ partner organizations on the ground. Same four-step cycle behind all of it.</p>
         </div>
       </div>
 
@@ -3453,7 +3440,7 @@
             </a>
             <a class="prog-mini" href="#/programs">
               <span class="sector">Mothers &amp; Children</span>
-              <h4>Kangaroo Mother Care</h4>
+              <h4>Kangaroo Care</h4>
             </a>
             <a class="prog-mini" href="#/programs">
               <span class="sector">Mothers &amp; Children</span>
@@ -3567,7 +3554,7 @@
       <span class="eyebrow on-dark">Learn More</span>
       <h2>Learn more about <em>Connect</em>.</h2>
       <p class="lead">Whether you're funding a new campaign, designing a program, or running services on the ground, let's see if Connect fits.</p>
-      <a href="mailto:info@dimagi.com" class="btn primary">Talk to us</a>
+      <a href="mailto:connect-info@dimagi.com" class="btn primary">Talk to us</a>
     </div>
   </div>
 
@@ -3583,7 +3570,7 @@
       <div>
         <span class="eyebrow">How Connect works</span>
         <h1>
-          <span class="h-stack">You Pick.</span>
+          <span class="h-stack">You choose.</span>
           <span class="h-stack"><em>Connect Delivers</em>.</span>
         </h1>
         <p class="lede">Connect is a two-sided service delivery marketplace. Funders pick a programmatic intervention, the geography, and the amount. Connect enrolls Frontline Workers to deliver and be paid for verified services, rapidly and cost-effectively. Funders then see their results.</p>
@@ -3623,7 +3610,7 @@
         <div class="market-side market-side-funder">
           <div class="market-side-header">
             <span class="role-tag">Funders</span>
-            <h3>Funders pick the <em>program intervention</em>, <em>country</em>, &amp; <em>amount</em>.</h3>
+            <h3>Funders pick the <em>program</em>, <em>country</em>, and <em>amount</em>.</h3>
             <a class="market-side-cta" href="#/programs">Learn more about Connect programs →</a>
           </div>
           <div class="picker-set">
@@ -3631,11 +3618,11 @@
               <h6>Program</h6>
               <div class="picker-scroll" data-cycle="1">
                 <button class="picker-item is-active">Child Health Campaign</button>
-                <button class="picker-item">Kangaroo Mother Care</button>
+                <button class="picker-item">Kangaroo Care</button>
                 <button class="picker-item">Early Childhood Development</button>
                 <button class="picker-item">Reading Glasses</button>
                 <button class="picker-item">Mother-Baby Wellness</button>
-                <button class="picker-item">Chlorine Dispenser</button>
+                <button class="picker-item">Chlorine Dispensers</button>
                 <button class="picker-item">Mental Health</button>
                 <button class="picker-item">Therapeutic Food</button>
                 <button class="picker-item">Survey &amp; Data Collection</button>
@@ -3683,7 +3670,7 @@
           <div class="market-side-header">
             <span class="role-tag">Frontline Organizations</span>
             <h3>Well-qualified Frontline Organizations deliver <em>verified services</em>.</h3>
-            <a class="market-side-cta" href="#/join">See how Frontline Organizations deliver →</a>
+            <a class="market-side-cta" href="#/insights">See how Frontline Organizations deliver →</a>
           </div>
           <div class="platform-promise">
             <div class="promise-item">
@@ -3816,7 +3803,7 @@
       <div class="filter-pills" data-filter-group="program">
         <button class="pill active" data-filter-type="program" data-filter-value="all">All</button>
         <button class="pill" data-filter-type="program" data-filter-value="chc">Child Health Campaign</button>
-        <button class="pill" data-filter-type="program" data-filter-value="kmc">Kangaroo Mother Care</button>
+        <button class="pill" data-filter-type="program" data-filter-value="kmc">Kangaroo Care</button>
         <button class="pill" data-filter-type="program" data-filter-value="ecd">Early Childhood Development</button>
         <button class="pill" data-filter-type="program" data-filter-value="readers">Reading Glasses</button>
       </div>
@@ -3956,11 +3943,11 @@
 
       <article class="insight-row" data-programs="kmc" data-ldvp="verify">
         <div class="meta-side">
-          <b>Program Type</b>Kangaroo Mother Care<br><br>
+          <b>Program Type</b>Kangaroo Care<br><br>
           <b>Frontline Activity</b>Verify
         </div>
         <div class="body">
-          <h4>Kangaroo Mother Care 3-day target sits at 50% against a 70% goal. We publish the gap.</h4>
+          <h4>Kangaroo Care 3-day target sits at 50% against a 70% goal. We publish the gap.</h4>
           <p>If missing the 3-day window cost a worker money, they'd falsify dates and we'd see fake 100% compliance. So we treat it as a guardrail, not a payment criterion. We coach. We integrate hospital discharge notifications. We publish the real number.</p>
         </div>
         <div class="meta-side">
@@ -3971,7 +3958,7 @@
 
       <article class="insight-row" data-programs="kmc" data-ldvp="verify">
         <div class="meta-side">
-          <b>Program Type</b>Kangaroo Mother Care<br><br>
+          <b>Program Type</b>Kangaroo Care<br><br>
           <b>Frontline Activity</b>Verify
         </div>
         <div class="body">
@@ -3986,7 +3973,7 @@
 
       <article class="insight-row" data-programs="kmc" data-ldvp="deliver">
         <div class="meta-side">
-          <b>Program Type</b>Kangaroo Mother Care<br><br>
+          <b>Program Type</b>Kangaroo Care<br><br>
           <b>Frontline Activity</b>Deliver
         </div>
         <div class="body">
@@ -4001,11 +3988,11 @@
 
       <article class="insight-row" data-programs="kmc" data-ldvp="pay">
         <div class="meta-side">
-          <b>Program Type</b>Kangaroo Mother Care<br><br>
+          <b>Program Type</b>Kangaroo Care<br><br>
           <b>Frontline Activity</b>Pay
         </div>
         <div class="body">
-          <h4>Connect Kangaroo Mother Care is $36 per newborn, small enough that one donor can fund one baby.</h4>
+          <h4>Connect Kangaroo Care is $36 per newborn, small enough that one donor can fund one baby.</h4>
           <p>That covers partner engagement, the Kangaroo wraps, scales, thermometers, pulse oximeters, training, payment per verified case, and supervision. We picked it for our first individual-giving experiment because $36 is the smallest unit at which one donor can fund a complete intervention with verified delivery.</p>
         </div>
         <div class="meta-side">
@@ -4043,7 +4030,7 @@
       <span class="eyebrow on-dark">For funders &amp; researchers</span>
       <h2>Interested in seeing <em>the numbers</em>?</h2>
       <p>We'd be happy to share the underlying data with you. Just reach out.</p>
-      <a href="mailto:info@dimagi.com" class="btn primary">Let's connect</a>
+      <a href="mailto:connect-info@dimagi.com" class="btn primary">Let's connect</a>
     </div>
   </div>
 
@@ -4073,7 +4060,7 @@
             <button class="pill is-soon" data-filter-type="prog" data-filter-cat="mc" data-filter-value="rutf">Therapeutic Food</button>
             <button class="pill" data-filter-type="prog" data-filter-cat="mc" data-filter-value="mbw">Mother-Baby Wellness</button>
             <button class="pill" data-filter-type="prog" data-filter-cat="mc" data-filter-value="ecd">Early Childhood Development</button>
-            <button class="pill" data-filter-type="prog" data-filter-cat="mc" data-filter-value="kmc">Kangaroo Mother Care</button>
+            <button class="pill" data-filter-type="prog" data-filter-cat="mc" data-filter-value="kmc">Kangaroo Care</button>
           </div>
         </div>
 
@@ -4124,7 +4111,7 @@
           </div>
           <div class="body">
             <span class="sector">Mothers &amp; Children</span>
-            <h3>Kangaroo Mother Care</h3>
+            <h3>Kangaroo Care</h3>
             <p class="countries">Uganda · Kenya · India · Nigeria</p>
             <p>Home visits for small and vulnerable newborns after they leave the hospital. 4 to 5 visits in the first 60 days. Closes the follow-up gap.</p>
             <div class="stat-strip">
@@ -4485,7 +4472,7 @@
       <span class="eyebrow on-dark">Run a Child Health Campaign</span>
       <h2>Interested in supporting <em>Child Health Campaigns</em>?</h2>
       <p class="lead">Let's build one together, starting with your desired geography and budget. We'll come back with a delivery plan, a cost-per-verified-visit estimate, and a list of frontline organizations to run with.</p>
-      <a href="mailto:info@dimagi.com" class="btn primary">Let's Design Your Program</a>
+      <a href="mailto:connect-info@dimagi.com" class="btn primary">Let's Design Your Program</a>
     </div>
   </div>
 
@@ -4518,7 +4505,7 @@
         <div class="label-group">
           <span class="eyebrow">A New Frontline Marketplace</span>
           <h2>A Whole New Opportunity for <em>Frontline Organizations</em>.</h2>
-          <p class="sub">200+ frontline organizations are getting new opportunities from Connect, gaining new skills, delivering services, and being paid for their work. The network expands their portfolio, their reach, and what they can take on next. <a href="#two-ways">Learn more here.</a></p>
+          <p class="sub">50+ frontline organizations are getting new opportunities from Connect, gaining new skills, delivering services, and being paid for their work. The network expands their portfolio, their reach, and what they can take on next. <a href="#two-ways">Learn more here.</a></p>
         </div>
       </div>
 
@@ -4872,7 +4859,7 @@
           <div class="step-block-label">The Numbers</div>
           <div class="pillar-stats">
             <div class="ps"><div class="n">$1.70</div><div class="l">Paid for every Child Health Campaign visit (example)</div></div>
-            <div class="ps"><div class="n">$2M+</div><div class="l">Paid direct to workers</div></div>
+            <div class="ps"><div class="n">$1.5M+</div><div class="l">Paid direct to workers</div></div>
           </div>
         </div>
       </div>
@@ -4896,7 +4883,7 @@
         <figure class="testimonial-card">
           <div class="mark">&ldquo;</div>
           <blockquote>We have been able to track 4,005 cases. Connect makes the data the case, not paperwork after the fact.</blockquote>
-          <figcaption class="who"><b>PIPNU</b><br>Uganda · Kangaroo Mother Care</figcaption>
+          <figcaption class="who"><b>PIPNU</b><br>Uganda · Kangaroo Care</figcaption>
         </figure>
 
         <figure class="testimonial-card coming-soon with-photo">
@@ -5010,8 +4997,8 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="foot-brand">
-      <div class="logo" aria-label="Connect by Dimagi"><svg><use href="#connect-logo"/></svg></div>
-      <p>High-impact interventions, delivered and verified.</p>
+      <div class="logo" aria-label="Connect by Dimagi"><svg viewBox="0 0 1526 431"><use href="#connect-logo"/></svg></div>
+       <p>Powering the Frontline.<br>Paying for Results.</p>
     </div>
     <div class="foot-col">
       <h5>About Connect</h5>
@@ -5023,17 +5010,17 @@
       </ul>
     </div>
     <div class="foot-col">
-      <h5>Funders</h5>
+      <h5>Frontline Organizations</h5>
       <ul>
-        <li><a href="mailto:info@dimagi.com">Request a Demo</a></li>
-        <li><a href="https://www.dimagi.com" target="_blank" rel="noopener">About Dimagi ↗</a></li>
+        <li><a href="#/join">Join the Connect Network</a></li>
+        <li><a href="https://connect.dimagi.com/accounts/signup/">Sign up for Connect</a></li>
       </ul>
     </div>
     <div class="foot-col">
-      <h5>Frontline Organizations</h5>
+      <h5>Funders</h5>
       <ul>
-        <li><a href="#/join">Join the Network</a></li>
-        <li><a href="#">Sign up for Connect</a></li>
+        <li><a href="mailto:connect-info@dimagi.com">Request a Demo</a></li>
+        <li><a href="https://www.dimagi.com" target="_blank" rel="noopener">About Dimagi ↗</a></li>
       </ul>
     </div>
   </div>
